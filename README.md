@@ -10,6 +10,7 @@ Create new file `.env` in root `/` and copy-paste contents of `/.env.sample`.
 ### Installing Docker
 
 Install [Docker Desktop](https://www.docker.com/)
+Better instructions: https://code.visualstudio.com/docs/devcontainers/containers
 
 Make sure [Docker compose](https://docs.docker.com/compose/install/) is installed (should be if Docker Desktop is installed).
 
