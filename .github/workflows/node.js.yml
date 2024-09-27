@@ -9,10 +9,11 @@ on:
 
 jobs:
   build-test-and-lint-frontend:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        os: [ubuntu-latest]
         node-version: [20.x, 22.x]
 
     steps:
@@ -41,10 +42,11 @@ jobs:
         working-directory: ./frontend
 
   build-test-and-lint-backend:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        os: [ubuntu-latest]
         node-version: [20.x, 22.x]
         
     steps:
