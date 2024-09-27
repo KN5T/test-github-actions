@@ -1,6 +1,6 @@
 import express from "express";
 
-var app = express()
+let app = express()
 const PORT = process.env.NODE_DOCKER_PORT
 const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
